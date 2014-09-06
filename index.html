@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<video autoplay loop poster="assets/img/bg_video_poster.jpg" id="bgvid">
-<source src="assets/videos/vbg_PinkFloyd-take_it_back.mp4" type="video/mp4">
-</video>
+    <video autoplay loop poster="assets/img/bg_video_poster.jpg" id="bgvid">
+        <source src="assets/videos/vbgpink.webm" type="video/webm">
+        <source src="assets/videos/vbgpink.mp4" type="video/mp4">
+    </video>
     <head>
         <meta charset="utf-8" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/jquery.flipster.css">
         <link rel="stylesheet" href="assets/css/mainStyle.css">
         <title>Pink Floyd Fanband</title>
     </head>
     <body>
         <div id="wrapper">
-            <header>
+            <header id="topo-geral">
                 <div id="brand" class="pull-left"><h1>Pink Floyd Fanband</h1></div>
                 <nav role="navigation" id="menu-topo" class="pull-right">
                     <a href="#">Home</a>
@@ -22,16 +24,91 @@
                 </nav>
             </header>
             <div id="main">
-                <section id="destaque">
-                      <h1>Destaque do site</h1>
+                <section id="destaque" class="flipster">
+                    <ul>
+                        <li>
+                            <img src="assets/img/dark_side.jpg">
+                        </li>
+                        <li>
+                            <img src="assets/img/the_wall.jpg">
+                        </li>
+                        <li>
+                            <img src="assets/img/the_division_Bell.jpg">
+                        </li>
+                        <li>
+                            <img src="assets/img/pulse.jpg">
+                        </li>
+                    </ul>
                 </section>
                 <section id="content">
-                    <h2>Albuns Favoritos</h2>
+                    <article id="main-article" class="pull-left">
+                        <header>
+                            <h3>Pink Floyd: 1965 - 1996 - Mais de três decadas conquistando gerações</h3>
+                            <p>Postado em <time datetime="06/09/2014/09 20:00">06 de Setembro, de 2014</time> por <a href="#">Supremo Samuel Diogo</a></p>
+                        </header>
+                        <p>
+                            A banda, originalmente, consistiu dos estudantes Roger Waters, Nick Mason,
+                            Richard Wright e Syd Barrett. Fundado em 1965, eles, inicialmente,
+                            tornaram-se populares tocando no cenário underground londrino, no fim
+                            dos anos 60.
+                        </p>
+                        <p><a href="wiki.html" class="link-btn">Leia Mais</a></p>
+                    </article>
+                    <aside id="spotify-playlist" class="pull-right">
+                        <iframe src="https://embed.spotify.com/?uri=spotify:user:samueldiogo:playlist:5DKy5I5OoVaMot4KnjbUXB" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                    </aside>
+                    <section id="integrantes">
+                        <h3>Integrantes</h3>
+                        <figure>
+                            <img src="assets/img/david_gilmour.jpg" alt="Portrait of Tammy Strobel" />
+                            <figcaption>
+                                David Gilmour<br>
+                                1946
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/img/Nick_Mason.jpg" alt="Portrait of Tammy Strobel" />
+                            <figcaption>
+                                Nick Mason<br>
+                                1944
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/img/roger_waters.jpg" alt="Portrait of Tammy Strobel" />
+                            <figcaption>
+                                Roger Waters<br>
+                                1943
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/img/richard_wright.jpg" alt="Portrait of Tammy Strobel" />
+                            <figcaption>Richard W. Wright<br>
+                                1962 &#10014; 2008
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="assets/img/syd_barrett.jpg" alt="Portrait of Tammy Strobel" />
+                            <figcaption>
+                                Syd Barrett<br>
+                                1946 &#10014; 2006
+                            </figcaption>
+                        </figure>
+                    </section>
                 </section>
             </div>
-            <footer>
-                Todos os direitos reservados
-            </footer>
         </div>
+        <footer>
+            Site Oficial: <a href="http://www.pinkfloyd.co.uk/">http://www.pinkfloyd.co.uk/</a><br>
+            Desenvolido por Fabricio e Samuel GADS 2014 INFNET
+        </footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="assets/js/jquery.flipster.js"></script>
+        <script>
+            $(function(){ 
+                $(".flipster").flipster({
+                    style: 'carousel'
+                });
+            });
+        </script>
     </body>
 </html>
