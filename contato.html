@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/jquery.flipster.css">
+        <link rel="stylesheet" href="assets/css/mainStyle.css">
+        <title>Pink Floyd Fanband</title>
+    </head>
+    <body>
+        <video autoplay loop poster="assets/img/bg_video_poster.jpg" id="bgvid">
+            <source src="assets/videos/vbgpink.webm" type="video/webm" />
+            <source src="assets/videos/vbgpink.mp4" type="video/mp4" />
+        </video>
+        <div id="wrapper">
+            <header id="topo-geral">
+                <div id="brand" class="pull-left"><h1>Pink Floyd Fanband</h1></div>
+                <nav role="navigation" id="menu-topo" class="pull-right">
+                    <a href="index.html">Home</a>
+                    <a href="wiki.html">Wiki</a>
+                    <a href="thedarkside.html">Albums Favoritos</a>
+                    <a href="contato.html" class="active">Contato</a>
+                </nav>
+            </header>
+            <div id="main">
+
+                <h2>Conheça o nosso trabalho:</h2>
+                <p>
+                    Nunca é demais lembrar o peso e o significado
+                    destes problemas, uma vez que o início da atividade
+                    geral de formação de atitudes oferece uma interessante
+                    oportunidade para verificação das formas de ação.
+                </p>
+                <section id="contato-content">
+                    <form role="form" id="contact-form">
+                        <label for="txt-name">Nome:</label>
+                        <input type="text" id="txt-nome" placeholder="Digite seu o seu nome">
+                        <label for="txt-email">E-mail:</label>
+                        <input type="email" id="txt-email" data-validation="email">
+                        <label for="txt-assunto">Assunto:</label>
+                        <input type="text" id="txt-assunto">
+                        <label for="txarea-comentario">Comentário:</label>
+                        <textarea id="txarea-comentario"></textarea>
+                        <button type="button" id="btn-enviar" class="btn-success" onclick="validaForm()">Enviar</button>
+                    </form>
+                </section>
+                <aside id="desenvolvedores">
+                    <h4>Desenvoldores:</h4>
+                    <figure>
+                        <img src="assets/img/fprocaci.jpg" alt="Foto do Analista Fabricio Procacci" class="img-redonda">
+                        <figcaption>
+                            Fabricio Procaci<br>
+                            <strong>Twiter: </strong><a href="https://twitter.com/fprocaci" target="new">@procaci</a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/img/samuel_diogo.jpg" alt="Foto do Analista Fabricio Procacci" class="img-redonda">
+                        <figcaption>
+                            Samuel Diogo<br>
+                            <strong>Twiter: </strong><a href="https://twitter.com/samudiogo" target="new">@samudiogo</a>
+                        </figcaption>
+                    </figure>
+                </aside>
+            </div>
+        </div>
+        <div id="modal-board">
+            <div id="modal-success">
+                <h4>Olá <span id="sp-nome"></span>! Obrigado por entrar em contato conosco, responderemos o mais breve possível!</h4>
+                <p>Uma cópia da menssagem abaixo foi encaminhada também para o seu email: <span id="sp-email"></span></p>
+                <p><strong>Assunto: </strong><span id="sp-assunto"></span></p>
+                <p><strong>Mensagem: </strong><span id="sp-mensagem"></span></p>
+                <button class="btn-success toggle-Modal" onclick="fechaModal()">Fechar</button>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="assets/js/valida.js"></script>
+        <footer>
+            Site Oficial: <a href="http://www.pinkfloyd.co.uk/">http://www.pinkfloyd.co.uk/</a><br>
+            Desenvolido por Fabricio e Samuel GADS 2014 INFNET
+        </footer>
+    </body>
+</html>

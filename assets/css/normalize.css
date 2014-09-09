@@ -28,7 +28,7 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-
+label,input,textarea,
 article,
 aside,
 details,

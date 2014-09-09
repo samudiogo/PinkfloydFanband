@@ -11,7 +11,7 @@ body {
 }
 
 header#topo-geral {
-    display: flex;
+    display: flexbox;
     background-color: rgba(128, 128, 128, 0.75);
     border-radius: 15px 15px 0 0;
     padding: 0 5px;
@@ -79,18 +79,59 @@ header > #brand, header > #menu-topo {
     padding: 10px;
 }
 
-#integrantes figure {
+#integrantes figure, #desenvolvedores figure {
     float: left;
     margin: 0 21px;
 }
 
-#integrantes figure img {
+#integrantes figure img, #desenvolvedores figure img  {
+    width: 150px;
     border-radius: 50%;
 }
 
-#integrantes figure figcaption {
+#integrantes figure figcaption, #desenvolvedores figure figcaption{
     text-align: center;
 }
+
+#menu-vertical a {
+    display: block;
+    border-bottom: 2px solid #FFF;
+    margin-left: 10px;
+    padding: 10px 0 10px 0;
+}
+
+#menu-vertical a.active {
+    color: #07b2fd;
+    border-bottom: 2px solid #07b2fd;
+}
+
+#contact-form label {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 10px auto;
+    text-align: right;
+    float: left;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+#contact-form input, #contact-form textarea {
+    display: inline-block;
+    width: 70%;
+    margin: 10px auto;
+    border: 1px solid #07b2fd;
+    border-radius: 8px;
+    color: #000;
+    padding: 8px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 /** Fim Pseudo***/
 
 /**** Fim Tags ****/
@@ -107,6 +148,8 @@ header > #brand, header > #menu-topo {
     width: 100%;
     background-color: rgba(39,39,39,.9);
     display: table;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #destaque {
@@ -132,6 +175,64 @@ header > #brand, header > #menu-topo {
     padding-bottom: 20px;
 }
 
+#menu-vertical {
+    width: 20%;
+    float: left;
+}
+
+#content {
+    width: 70%;
+    float: right;
+}
+
+#contato-content {
+    padding: 10px;
+    float: left;
+    width: 50%;
+}
+
+#desenvolvedores {
+    float: left;
+    width: 50%;
+}
+
+#contact-form {
+    max-width: 500px;
+    clear: both;
+}
+
+#modal-board {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(39,39,39,.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#modal-success {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    color: #000;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 1px 3px 15px #07b2fd;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+#btn-enviar {
+    margin-left: 20%;
+}
 /****FIM IDS*/
 
 /** Classes ****/
@@ -155,6 +256,44 @@ header > #brand, header > #menu-topo {
     border-radius: 8px;
     border: 1px solid #484646;
     color: #FFF;
+}
+
+.is-Hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.btn-success {
+    background-color: #29A100;
+    padding: 6px 20px;
+    border: 1px solid #1C6E00;
+    border-radius: 8px;
+    text-shadow: 1px 0 3px #999;
+}
+
+.box-msg {
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-color: rgb(255, 73, 73);
+    border: 1px solid #F00;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+}
+
+.offset-left {
+    display: inline-block;
+    margin-left: 30%;
+    width: 70%;
+}
+.img-redonda{
+    border-radius: 50%;
+}
+
+.input-success{
+    border: 1px solid #29A100 !important;
 }
 /***Fim Clasess***/
 
