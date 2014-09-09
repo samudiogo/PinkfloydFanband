@@ -81,15 +81,18 @@ header > #brand, header > #menu-topo {
 
 #integrantes figure, #desenvolvedores figure {
     float: left;
-    margin: 0 21px;
 }
 
-#integrantes figure img, #desenvolvedores figure img  {
+#integrantes figure {
+    margin: 0 2%;
+}
+
+#integrantes figure img, #desenvolvedores figure img {
     width: 150px;
     border-radius: 50%;
 }
 
-#integrantes figure figcaption, #desenvolvedores figure figcaption{
+#integrantes figure figcaption, #desenvolvedores figure figcaption {
     text-align: center;
 }
 
@@ -160,7 +163,7 @@ header > #brand, header > #menu-topo {
 }
 
 #main-article {
-    width: 640px;
+    width: 60%;
     padding: 15px;
 }
 
@@ -184,7 +187,9 @@ header > #brand, header > #menu-topo {
     width: 70%;
     float: right;
 }
-
+#main-content{
+   width: 100%;
+}
 #contato-content {
     padding: 10px;
     float: left;
@@ -232,6 +237,10 @@ header > #brand, header > #menu-topo {
 
 #btn-enviar {
     margin-left: 20%;
+}
+#infnet{
+    clear: both;
+    padding-top: 30px;
 }
 /****FIM IDS*/
 
@@ -288,11 +297,12 @@ header > #brand, header > #menu-topo {
     margin-left: 30%;
     width: 70%;
 }
-.img-redonda{
+
+.img-redonda {
     border-radius: 50%;
 }
 
-.input-success{
+.input-success {
     border: 1px solid #29A100 !important;
 }
 /***Fim Clasess***/
