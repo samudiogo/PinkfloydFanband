@@ -24,9 +24,19 @@
         <link rel="stylesheet" href="assets/css/mainStyle.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="assets/js/responsa.js"></script>
+        <script src="assets/js/jquery.flipster.js"></script>
+        <script>
+            $(function(){ 
+                $(".flipster").flipster({
+                    style: 'carousel'
+                });
+            });
+        </script>
+
         <title>Pink Floyd Fanband</title>
     </head>
     <body>
+        <a href="https://github.com/samudiogo/PinkfloydFanband" id="fork-github"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
         <video autoplay loop poster="assets/img/bg_video_poster.jpg" id="bgvid">
             <source src="assets/videos/vbgpink.webm" type="video/webm" />
             <source src="assets/videos/vbgpink.mp4" type="video/mp4" />
@@ -44,24 +54,28 @@
             <div id="main">
                 <section id="destaque" class="flipster">
                     <ul>
-                        <li>
-                            <a href="darkside.html">
+                        <li title="Dark Side of the Moon">
+                            <a href="thedarkside.html">
                                 <img src="assets/img/dark_side.jpg" alt="capa do album Dark Side of the Moon">
+                                <h4>The Dark Side of the Moon - A oitava maravilha do Mundo da musica</h4>
                             </a>
                         </li>
                         <li>
                             <a href="thewall.html">
                                 <img src="assets/img/the_wall.jpg" alt="capa do album The Wall ">
+                                <h4>The Wall - We don't need education...</h4>
                             </a>
                         </li>
                         <li>
                             <a href="thedivisionbell.html">
                                 <img src="assets/img/the_division_Bell.jpg" alt="capa do album The Division Bell">
+                                <h4>The Division Bell - Produzido por Bob Ezrin marca o ultimo Album gravado em estúdio</h4>
                             </a>
                         </li>
                         <li>
                             <a href="pulse.html">
                                 <img src="assets/img/pulse.jpg" alt="capa do album P.U.L.S.E">
+                                <h4>P.U.L.S.E O retorno triunfal de Pink Floyd aos palcos em 1995</h4>
                             </a>
                         </li>
                     </ul>
@@ -79,10 +93,11 @@
                             dos anos 60.
                         </p>
                         <p>
-                            A banda, originalmente, consistiu dos estudantes Roger Waters, Nick Mason,
-                            Richard Wright e Syd Barrett. Fundado em 1965, eles, inicialmente,
-                            tornaram-se populares tocando no cenário underground londrino, no fim
-                            dos anos 60.
+                           Em entrevista concedida ao jornal italiano La Repubblica4 no dia 3
+                            de fevereiro de 2006, Gilmour indicava o fim do Pink Floyd, declarando
+                            que o célebre grupo não produzirá qualquer novo material, nem voltará
+                            a reunir-se novamente. No entanto a possibilidade de se fazer uma
+                            apresentação similar ao Live 8 não foi descartada tanto por Gilmour ou Mason.
                         </p>
                         <p><a href="wiki.html" class="link-btn">Leia Mais</a></p>
                     </article>
@@ -134,14 +149,5 @@
             <a href="http://www.pinkfloyd.com/">http://www.pinkfloyd.com/</a><br>
             Desenvolvido por Fabricio e Samuel GADS 2014 INFNET
         </footer>
-        
-        <script src="assets/js/jquery.flipster.js"></script>
-        <script>
-            $(function(){ 
-                $(".flipster").flipster({
-                    style: 'carousel'
-                });
-            });
-        </script>
     </body>
 </html>

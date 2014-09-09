@@ -10,12 +10,6 @@ body {
     background-color: #000;
 }
 
-header#topo-geral {
-    display: flexbox;
-    background-color: rgba(128, 128, 128, 0.75);
-    border-radius: 15px 15px 0 0;
-    padding: 0 5px;
-}
 
 footer {
     text-align: center;
@@ -39,6 +33,11 @@ h1, h2, h3 {
 ul {
     list-style: none;
 }
+
+p {
+    font-size: 15px;
+    line-height: 160%;
+}
 /*** regrinhas mistas (pseudo) **/
 video#bgvid {
     position: fixed;
@@ -59,9 +58,11 @@ header > #menu-topo {
 
 Header > #brand h1 {
     font-weight: 400;
-    font-size: 2.565em;
     padding: 0;
     margin: 0;
+    font: 400 38pt 'Open Sans';
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
 
 header #menu-topo a {
@@ -82,6 +83,7 @@ header #menu-topo a:hover, header #menu-topo a.active {
 
 header > #brand, header > #menu-topo {
     width: 50%;
+    height: 45px;
     display: inline-block;
 }
 
@@ -109,6 +111,10 @@ header > #brand, header > #menu-topo {
 
 #integrantes figure figcaption, #desenvolvedores figure figcaption {
     text-align: center;
+}
+
+#desenvolvedores figure figcaption {
+    font-size: 14px;
 }
 
 #menu-vertical a {
@@ -164,6 +170,9 @@ header > #brand, header > #menu-topo {
 #logo-infnet img {
     border-radius: 6px;
 }
+
+.flipster-carousel .flip-items img {
+}
 /** Fim Pseudo***/
 
 /**** Fim Tags ****/
@@ -180,8 +189,9 @@ header > #brand, header > #menu-topo {
     width: 100%;
     background-color: rgba(39,39,39,.9);
     display: table;
-    padding: 10px;
+    padding: 25px 10px 10px 10px;
     box-sizing: border-box;
+    border-radius: 15px 15px 0 0;
 }
 
 #destaque {
@@ -267,7 +277,7 @@ header > #brand, header > #menu-topo {
 }
 
 #btn-enviar {
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
 #logo-infnet {
@@ -337,6 +347,15 @@ header > #brand, header > #menu-topo {
 .input-success {
     border: 1px solid #29A100 !important;
 }
+
+.text-success {
+    color: #29A100;
+}
+
+.text-blue {
+    color: #07b2fd;
+}
+
 /***Fim Clasess***/
 
 /****algumas tags responsivas*/
@@ -420,5 +439,12 @@ header > #brand, header > #menu-topo {
     #logo-infnet h4 {
         width: 55%;
         line-height: 120%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    #main-article {
+        width: 100%;
     }
 }

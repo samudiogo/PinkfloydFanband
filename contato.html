@@ -27,6 +27,7 @@
         <title>Contato</title>
     </head>
     <body>
+        <a href="https://github.com/samudiogo/PinkfloydFanband" id="fork-github"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
         <video autoplay loop poster="assets/img/bg_video_poster.jpg" id="bgvid">
             <source src="assets/videos/vbgpink.webm" type="video/webm" />
             <source src="assets/videos/vbgpink.mp4" type="video/mp4" />
@@ -64,11 +65,12 @@
                     </form>
                 </section>
                 <aside id="desenvolvedores">
-                    <h4>Desenvoldores:</h4>
+                    <h4>Conheça nossos desenvolvedores:</h4>
                     <figure>
                         <img src="assets/img/fprocaci.jpg" alt="Foto do Analista Fabricio Procacci" class="img-redonda">
                         <figcaption>
                             Fabricio Procaci<br>
+                            <em>CEO Procaci Solutions</em><br>
                             <strong>Twiter: </strong><a href="https://twitter.com/fprocaci" target="new">@procaci</a>
                         </figcaption>
                     </figure>
@@ -76,6 +78,7 @@
                         <img src="assets/img/samuel_diogo.jpg" alt="Foto do Analista Fabricio Procacci" class="img-redonda">
                         <figcaption>
                             Samuel Diogo<br>
+                            <em>CEO - SDTECH</em><br>
                             <strong>Twiter: </strong><a href="https://twitter.com/samudiogo" target="new">@samudiogo</a>
                         </figcaption>
                     </figure>
@@ -92,11 +95,13 @@
         </div>
         <div id="modal-board">
             <div id="modal-success">
-                <h4>Olá <span id="sp-nome"></span>! Obrigado por entrar em contato conosco, responderemos o mais breve possível!</h4>
-                <p>Uma cópia da menssagem abaixo foi encaminhada também para o seu email: <span id="sp-email"></span></p>
+                <h4>Olá <span id="sp-nome" class="text-success"></span>! Obrigado por entrar em contato conosco, responderemos o mais breve possível!</h4>
+                <p>Uma cópia da menssagem abaixo foi encaminhada também para o seu email: <span id="sp-email" class="text-blue"></span></p>
                 <p><strong>Assunto: </strong><span id="sp-assunto"></span></p>
+                <br>
                 <p><strong>Mensagem: </strong><span id="sp-mensagem"></span></p>
-                <button class="btn-success toggle-Modal" onclick="fechaModal()">Fechar</button>
+                <br>
+                <button class="btn-success" onclick="fechaModal()">Fechar</button>
             </div>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

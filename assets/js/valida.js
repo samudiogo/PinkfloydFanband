@@ -7,6 +7,8 @@ function fechaModal()
 function validaForm()
 {
     var txt_nome, txt_email, txt_assunto, txt_comentario;
+    var emailRegExp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
 
     txt_nome = document.getElementById("txt-nome").value;
     txt_email = document.getElementById("txt-email").value;
@@ -59,3 +61,28 @@ function validaForm()
     }
 }
 
+
+/* Validando enquanto o usuário digita o email... acho melhor validar assim..***/
+$("#txt-email").keyup(function ()
+{
+    $(".box-email").remove();
+    var inputVal = $(this).val();
+    // Email address regular expression eu peguei essa expressão aqui:
+    // http://stackoverflow.com/questions/46155/validate-email-address-in-javascript
+    var emailReg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!emailReg.test(inputVal))
+    {
+        if ($(this).val() == '' || $(this).val == null)
+        {
+            $("<span class='box-msg offset-left box-email'> Pode digitar o seu email, prometo não passar pra ninguém!! </span>").insertAfter("#txt-email");
+        } else
+        {
+            $("<span class='box-msg offset-left box-email'> Eu nunca vi um e-mail assim.. tem certeza que isso funciona?! </span>").insertAfter("#txt-email");
+        }
+
+    }
+    else
+    {
+        $("#txt-email").addClass("input-success");
+    }
+});
