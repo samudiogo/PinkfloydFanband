@@ -1,0 +1,39 @@
+Participantes:
+Fabricio Procaci
+Samuel Diogo
+====================================================
+Total de Páginas: 8 páginas 
+	+ 3 css (normalize[css reset],jquery.flipster e mainStyle)
+	+ 3 js  (jquery.flipster[coverflow], responsa[auxilia a responsividade da página] e valida[Formulario])
+total de imagens: 18
+Total de Videos: 2
+Total de Arquivos uteis: 35
+Tamnho total do site: 9.79mb
+
+Link do trabalho:
+http://pinkfloydfanband.azurewebsites.net/index.html
+=====================================================
+Link para teste de responsividade:
+(infelizmente não pude me dedicar 100% nesta etapa...) 
+http://mobt.me/1ZKR
+=====================================================
+Link para o Github (fazer download e visualização on-line do código):
+https://github.com/samudiogo/PinkfloydFanband
+=====================================================
+
+Apesar do W3C Validator apontar erros de validação referentes as meta tags que utilizei, 
+eu conferi um por uma na tabela de registro de SEO metas tags e todas existem e são plenamente
+utilizadas por robots de buscas e afins. Segue link:
+http://wiki.whatwg.org/wiki/MetaExtensions#Registered_Extensions
+
+======================================================
+Principais referências:
+http://tools.seochat.com/ (SEO Tags)
+https://yoast.com/W3C-validation-seo/ (dicas SEO e validações W3C)
+http://www.w3schools.com/
+http://en.wikipedia.org/wiki/Pink_Floyd
+http://stackoverflow.com/questions/46155/validate-email-address-in-javascript
+http://www.cssrex.com/tips-tricks/how-to-create-3d-text-using-css3/ (logo do Site)
+http://css-tricks.com/ (layout de páginas e artigos html5, css3, várias dicas..)
+
+

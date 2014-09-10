@@ -3,20 +3,21 @@
     <head>
         <meta charset="utf-8" />
         <meta name="author" content="Fabricio Procaci, Samuel Diogo">
-        <meta name="subject" content="Fanband Site">
         <meta name="Description" content="Este trabalho visa mostra um pouco da história da banda que marcou gerações com seu rock progressivo">
-        <meta name="Classification" content="Trata-se de um trabalho de faculdade">
         <meta name="Keywords" content="Pink Floyd, The Dark Side of the Moon, Pulse, The Division Bell, INFNET, Trabalho WebDesign">
-        <meta name="Geography" content="Rua São José, 90 Centro - Rio de Janeiro">
-        <meta name="Language" content="portuguese-br">
-        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-        <meta name="Copyright" content="MIT License">
-        <meta name="Designer" content="Samuel Diogo">
-        <meta name="Publisher" content="Fabricio Procaci">
-        <meta name="distribution" content="Global">
-        <meta name="Robots" content="NOINDEX,NOFOLLOW">
-        <meta name="city" content="Rio de Janeiro">
-        <meta name="country" content="Brazil">
+                    <!--
+                    Comentei propositalmente, apesar das metas tags abaixo existirem, o W3C acusa erro na validação
+                    <meta name="subject" content="Fanband Site">
+                    <meta name="Classification" content="Trata-se de um trabalho de faculdade">
+                    <meta name="Geography" content="Rua São José, 90 Centro - Rio de Janeiro">
+                    <meta name="Language" content="portuguese-br">
+                    <meta name="Copyright" content="MIT License">
+                    <meta name="Designer" content="Samuel Diogo">
+                    <meta name="Publisher" content="Fabricio Procaci">
+                    <meta name="distribution" content="Global">
+                    <meta name="Robots" content="NOINDEX,NOFOLLOW">
+                    <meta name="city" content="Rio de Janeiro">
+                    <meta name="country" content="Brazil">-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="assets/css/normalize.css">
@@ -27,7 +28,9 @@
         <title>Contato</title>
     </head>
     <body>
-        <a href="https://github.com/samudiogo/PinkfloydFanband" id="fork-github"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+        <a href="https://github.com/samudiogo/PinkfloydFanband" id="fork-github">
+            <img src="assets/img/logo-github.png" alt="Fork me on GitHub">
+        </a>
         <video autoplay loop poster="assets/img/bg_video_poster.jpg" id="bgvid">
             <source src="assets/videos/vbgpink.webm" type="video/webm" />
             <source src="assets/videos/vbgpink.mp4" type="video/mp4" />
@@ -53,7 +56,7 @@
                 </p>
                 <section id="contato-content">
                     <form role="form" id="contact-form">
-                        <label for="txt-name">Nome:</label>
+                        <label for="txt-nome">Nome:</label>
                         <input type="text" id="txt-nome" placeholder="Digite seu o seu nome">
                         <label for="txt-email">E-mail:</label>
                         <input type="email" id="txt-email" data-validation="email">
@@ -63,6 +66,13 @@
                         <textarea id="txarea-comentario"></textarea>
                         <button type="button" id="btn-enviar" class="btn-success" onclick="validaForm()">Enviar</button>
                     </form>
+                    <a href="https://trello.com/samudiogo/recommend" target="new" title="Clique aqui e conheça esta plataforma!">
+                        <img src="assets/img/TrelloGoldLogo.png" alt="trelo logotipo" style="height: 50px">
+                    </a>
+                    <p class="pull-left">
+                        Projeto modelado e gerido no
+                        <a href="assets/img/trello_desenvolvimento_trabalho.png" target="new" title="clique aqui para ver o projeto">
+                            <strong>Trello</strong></a></p>
                 </section>
                 <aside id="desenvolvedores">
                     <h4>Conheça nossos desenvolvedores:</h4>
@@ -109,7 +119,14 @@
         <footer>
             Site Oficial: <a href="http://www.pinkfloyd.co.uk/">http://www.pinkfloyd.co.uk/</a> ||
             <a href="http://www.pinkfloyd.com/">http://www.pinkfloyd.com/</a><br>
-            Desenvolvido por Fabricio e Samuel GADS 2014 INFNET
+            Desenvolvido por Fabricio e Samuel GADS 2014 INFNET<br><br>
+            <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fpinkfloydfanband.azurewebsites.net%2Fcontato.html;ss=1;st=1;outline=1" class="text-success" target="new">
+            Validado com sucesso no W3C!
+            </a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" style="vertical-align: sub; padding-left: 10px;">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+            <br>
         </footer>
     </body>
 </html>
